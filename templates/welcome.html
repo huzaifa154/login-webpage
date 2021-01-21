@@ -1,8 +1,90 @@
 {%extends "base.html"%}
 {% block content %}
+<style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+  * {box-sizing: border-box}
 
-  <h1>Welcome to Flask!</h2>
-  <br>
-  <p>Click <a href="/">here</a> to login.</p>
+  /* Full-width input fields */
+input[type=text], input[type=text] {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+  
+  /* Set a style for all buttons */
+button {
+  display: inline-block;
+  background-color: #1925c5;
+  color: white;
+  line-height: 12px;
+  font-family: tahoma;
+  position:absolute;
+  top:0;
+ 
+  padding: 10px 10px;
+  font-size: 10pt;
+  border: none;
+  cursor: pointer;
+  width: 7%;
+  opacity: 0.9;
+}
 
+/* Add padding to container elements */
+.container {
+  padding: 1px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.loginbtn { 
+  line-height: 12px;
+  font-family: tahoma;
+  position:absolute;
+  top:0;
+  right:0;
+  padding: 10px 10px;
+  font-size: 10pt;
+  border: none;
+  cursor: pointer;
+  width: 7%;
+  opacity: 0.9;
+
+}
+
+
+.ssignupbtn{
+  line-height: 12px;
+  font-family: tahoma;
+  position:absolute;
+  top:0;
+  
+  padding: 10px 10px;
+  font-size: 10pt;
+  border: none;
+  cursor: pointer;
+  width: 7%;
+  opacity: 0.9;
+}
+
+
+</style>
+<body>
+
+<form action="" style="border:0px solid #ccc">
+  <div class="container">
+    <h1>Welcome to Flask!</h1>
+
+    <div class="button">
+
+    
+
+      <button name="button" class="loginbtn" type="button">Login</button> 
+      <button name="button" class="ssignupbtn" type="button">Sign Up</button>
+
+    </div>
 {% endblock %}
