@@ -90,15 +90,26 @@ button:hover {
     <p>Please fill in this form to create an account.</p>
     <hr>
 
+    <b>First Name</b></label>
+    <input type="text" placeholder="First Name" name="firNam" value="{{ request.form.firNam }}" required> 
+    <br>
+    <br>
+    <b>Last Name</b></label>
+    <input type="text" placeholder="Last Name" name="lasNam" value="{{ request.form.lasNam }}" required>
+    <br>
+    <br>
     <b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" value="{{ request.form.email }}" required>
-
+    <br>
+    <br>
     <b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" value="{{ request.form.psw }}" required>
-
+    <br>
+    <br>
     <b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="pswrepeat" value="{{ request.form.pswrepeat }}" required>
-    
+    <br>
+    <br>
     <b>Date of Birth</b></label><br>
     <input type="date" placeholder="Enter Date of Birth" name="birthdate" value="{{ request.form.birthdate }}" required>
     <br>
@@ -110,7 +121,7 @@ button:hover {
     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
+     <a href="/welcome"><button type="button" class="cancelbtn" >Cancel</button></a> 
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
   </div>
